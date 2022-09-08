@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:the_luxury_hut/screens/account_screen/ui/account_screen_ui.dart';
-import 'package:the_luxury_hut/screens/chat_screen/ui/chat_screen_ui.dart';
-import 'package:the_luxury_hut/screens/discover_screen/ui/discover_screen_ui.dart';
-import 'package:the_luxury_hut/screens/my_watches_screen/ui/my_watches_screen_ui.dart';
-import 'package:the_luxury_hut/screens/sell_screen/ui/sell_screen_ui.dart';
-
-import 'constants/dimens.dart';
-import 'constants/palatte.dart';
+import 'package:the_luxury_hut/presentations/screens/account_screen/ui/account_screen_ui.dart';
+import '../../constants/dimens.dart';
+import '../../constants/palatte.dart';
+import '../screens/chat_screen/ui/chat_screen_ui.dart';
+import '../screens/discover_screen/ui/discover_screen_ui.dart';
+import '../screens/my_watches_screen/ui/my_watches_screen_ui.dart';
+import '../screens/sell_screen/ui/sell_screen_ui.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
   const CustomBottomNavigationBar({Key? key}) : super(key: key);

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_luxury_hut/screens/log_in_screen/ui/login_screen_ui.dart';
-import 'package:the_luxury_hut/screens/welcome_screen/ui/welcome_screen_ui.dart';
+import 'package:the_luxury_hut/presentations/screens/log_in_screen/ui/login_screen_ui.dart';
 
 void main() {
   runApp(const MyApp());
