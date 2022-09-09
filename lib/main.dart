@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:the_luxury_hut/presentations/screens/log_in_screen/ui/login_screen_ui.dart';
+import 'package:the_luxury_hut/presentations/widgets/bottom_navigation_bar.dart';
 
 
 void main() {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const LoginScreen(),
+      home: const CustomBottomNavigationBar(),
     );
   }
 }
