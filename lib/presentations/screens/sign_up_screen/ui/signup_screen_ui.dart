@@ -27,283 +27,281 @@ class _SignupScreenState extends State<SignupScreen> {
 
   Widget step1(){
     return SizedBox(
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
-      child: Padding(
-        padding: const EdgeInsets.only(left: 20, right: 20),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Expanded(child: ListView(
-              children: [
-               const SizedBox(
-                  height: AppSizes.dimen10,
-                ),
-                Row(
-                  children: const [
-                    Text("Company Name",style: TextStyle(fontFamily: "JosefinSans"),),
-                    Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
-                  ],
-                ),
-                const SizedBox(height: AppSizes.dimen10,),
-                Container(
-                  height: 45,
-                  decoration: BoxDecoration(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: Padding(
+          padding: const EdgeInsets.only(left: 20, right: 20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Expanded(child: ListView(
+                children: [
+                  const SizedBox(
+                    height: AppSizes.dimen10,
+                  ),
+                  Row(
+                    children: const [
+                      Text("Company Name",style: TextStyle(fontFamily: "JosefinSans"),),
+                      Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
+                    ],
+                  ),
+                  const SizedBox(height: AppSizes.dimen10,),
+                  Container(
+                    height: 45,
+                    decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius:  BorderRadius.circular(5),
-                  ),
-                  child: TextFormField(
-                    obscureText: false,
-                    decoration: const InputDecoration(
-                      hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
-                      hintText: "",
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20),
+                    ),
+                    child: TextFormField(
+                      obscureText: false,
+                      decoration: const InputDecoration(
+                        hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
+                        hintText: "",
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.all(20),
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(
-                  height: AppSizes.dimen10,
-                ),
-                Row(
-                  children: const [
-                    Text("Types of Business",style: TextStyle(fontFamily: "JosefinSans"),),
-                    Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
-                  ],
-                ),
-                const SizedBox(height: AppSizes.dimen10,),
-                Container(
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:  BorderRadius.circular(5),
+                  const SizedBox(
+                    height: AppSizes.dimen10,
                   ),
-                  child: TextFormField(
-                    obscureText: false,
-                    decoration: const InputDecoration(
-                      hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
-                      hintText: "",
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: AppSizes.dimen10,
-                ),
-                const Text("Title",style: TextStyle(fontFamily: "JosefinSans"),),
-                const SizedBox(height: AppSizes.dimen10,),
-                Container(
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:  BorderRadius.circular(5),
-                  ),
-                  child: TextFormField(
-                    obscureText: false,
-                    decoration: const InputDecoration(
-                      hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
-                      hintText: "",
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: AppSizes.dimen10,
-                ),
-                Row(
-                  children: const [
-                    Text("First Name",style: TextStyle(fontFamily: "JosefinSans"),),
-                    Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
-                  ],
-                ),
-                const SizedBox(height: AppSizes.dimen10,),
-                Container(
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:  BorderRadius.circular(5),
-                  ),
-                  child: TextFormField(
-                    obscureText: false,
-                    decoration: const InputDecoration(
-                      hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
-                      hintText: "",
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: AppSizes.dimen10,
-                ),
-                Row(
-                  children: const [
-                    Text("Last Name",style: TextStyle(fontFamily: "JosefinSans"),),
-                    Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
-                  ],
-                ),
-                const SizedBox(height: AppSizes.dimen10,),
-                Container(
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:  BorderRadius.circular(5),
-                  ),
-                  child: TextFormField(
-                    obscureText: false,
-                    decoration: const InputDecoration(
-                      hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
-                      hintText: "",
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: AppSizes.dimen10,
-                ),
-                Row(
-                  children: const [
-                    Text("Email Address",style: TextStyle(fontFamily: "JosefinSans"),),
-                    Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
-                  ],
-                ),
-                const SizedBox(height: AppSizes.dimen10,),
-                Container(
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:  BorderRadius.circular(5),
-                  ),
-                  child: TextFormField(
-                    obscureText: false,
-                    decoration: const InputDecoration(
-                      hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
-                      hintText: "",
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: AppSizes.dimen10,
-                ),
-                Row(
-                  children: const [
-                    Text("Phone Number",style: TextStyle(fontFamily: "JosefinSans"),),
-                    Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
-                  ],
-                ),
-                const SizedBox(height: AppSizes.dimen10,),
-                Container(
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:  BorderRadius.circular(5),
-                  ),
-                  child: TextFormField(
-                    obscureText: false,
-                    decoration: const InputDecoration(
-                      hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
-                      hintText: "",
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: AppSizes.dimen10,
-                ),
-                Row(
-                  children: const [
-                    Text("Account Username",style: TextStyle(fontFamily: "JosefinSans"),),
-                    Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
-                  ],
-                ),
-                const SizedBox(height: AppSizes.dimen10,),
-                Container(
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:  BorderRadius.circular(5),
-                  ),
-                  child: TextFormField(
-                    obscureText: false,
-                    decoration: const InputDecoration(
-                      hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
-                      hintText: "",
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: AppSizes.dimen10,
-                ),
-                Row(
-                  children: const [
-                    Text("Password",style: TextStyle(fontFamily: "JosefinSans"),),
-                    Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
-                  ],
-                ),
-                const SizedBox(height: AppSizes.dimen10,),
-                Container(
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:  BorderRadius.circular(5),
-                  ),
-                  child: TextFormField(
-                    obscureText: false,
-                    decoration: const InputDecoration(
-                      hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
-                      hintText: "",
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.all(20),
-                    ),
-                  ),
-                ),
-
-              ],
-            )),
-            SizedBox(
-              width: MediaQuery.of(context).size.width,
-              child: ElevatedButton(
-                  onPressed: () {
-                    jumpTo(1);
-                    setState(() {
-                      step2Color = Colors.green;
-                    });
-                  },
-                  style: ElevatedButton.styleFrom(
-                      primary: AppColors.green,
-                      // padding: const EdgeInsets.symmetric(horizontal: 155, vertical: 10),
-                      textStyle: const TextStyle(
-                          fontSize: AppSizes.dimen15,
-                          fontWeight: FontWeight.normal)),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const[
-                       Text("Continue to Next Step",style: TextStyle(fontFamily: "JosefinSans"),),
-                      Icon((Icons.arrow_forward)),
+                  Row(
+                    children: const [
+                      Text("Types of Business",style: TextStyle(fontFamily: "JosefinSans"),),
+                      Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
                     ],
-                  )),
-            ),
-            Row(
-              children: [
-                const Text("Already have an account"),
-                TextButton(onPressed: (){
-                  Navigator.pushNamed(context, "/login");
-                }, child: const Text("Login", style: TextStyle(
-                  decoration: TextDecoration.underline
-                ),))
-              ],
-            )
-          ],
-        ),
-      )
+                  ),
+                  const SizedBox(height: AppSizes.dimen10,),
+                  Container(
+                    height: 45,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius:  BorderRadius.circular(5),
+                    ),
+                    child: TextFormField(
+                      obscureText: false,
+                      decoration: const InputDecoration(
+                        hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
+                        hintText: "",
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.all(20),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: AppSizes.dimen10,
+                  ),
+                  const Text("Title",style: TextStyle(fontFamily: "JosefinSans"),),
+                  const SizedBox(height: AppSizes.dimen10,),
+                  Container(
+                    height: 45,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius:  BorderRadius.circular(5),
+                    ),
+                    child: TextFormField(
+                      obscureText: false,
+                      decoration: const InputDecoration(
+                        hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
+                        hintText: "",
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.all(20),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: AppSizes.dimen10,
+                  ),
+                  Row(
+                    children: const [
+                      Text("First Name",style: TextStyle(fontFamily: "JosefinSans"),),
+                      Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
+                    ],
+                  ),
+                  const SizedBox(height: AppSizes.dimen10,),
+                  Container(
+                    height: 45,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius:  BorderRadius.circular(5),
+                    ),
+                    child: TextFormField(
+                      obscureText: false,
+                      decoration: const InputDecoration(
+                        hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
+                        hintText: "",
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.all(20),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: AppSizes.dimen10,
+                  ),
+                  Row(
+                    children: const [
+                      Text("Last Name",style: TextStyle(fontFamily: "JosefinSans"),),
+                      Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
+                    ],
+                  ),
+                  const SizedBox(height: AppSizes.dimen10,),
+                  Container(
+                    height: 45,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius:  BorderRadius.circular(5),
+                    ),
+                    child: TextFormField(
+                      obscureText: false,
+                      decoration: const InputDecoration(
+                        hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
+                        hintText: "",
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.all(20),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: AppSizes.dimen10,
+                  ),
+                  Row(
+                    children: const [
+                      Text("Email Address",style: TextStyle(fontFamily: "JosefinSans"),),
+                      Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
+                    ],
+                  ),
+                  const SizedBox(height: AppSizes.dimen10,),
+                  Container(
+                    height: 45,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius:  BorderRadius.circular(5),
+                    ),
+                    child: TextFormField(
+                      obscureText: false,
+                      decoration: const InputDecoration(
+                        hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
+                        hintText: "",
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.all(20),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: AppSizes.dimen10,
+                  ),
+                  Row(
+                    children: const [
+                      Text("Phone Number",style: TextStyle(fontFamily: "JosefinSans"),),
+                      Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
+                    ],
+                  ),
+                  const SizedBox(height: AppSizes.dimen10,),
+                  Container(
+                    height: 45,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius:  BorderRadius.circular(5),
+                    ),
+                    child: TextFormField(
+                      obscureText: false,
+                      decoration: const InputDecoration(
+                        hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
+                        hintText: "",
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.all(20),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: AppSizes.dimen10,
+                  ),
+                  Row(
+                    children: const [
+                      Text("Account Username",style: TextStyle(fontFamily: "JosefinSans"),),
+                      Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
+                    ],
+                  ),
+                  const SizedBox(height: AppSizes.dimen10,),
+                  Container(
+                    height: 45,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius:  BorderRadius.circular(5),
+                    ),
+                    child: TextFormField(
+                      obscureText: false,
+                      decoration: const InputDecoration(
+                        hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
+                        hintText: "",
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.all(20),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: AppSizes.dimen10,
+                  ),
+                  Row(
+                    children: const [
+                      Text("Password",style: TextStyle(fontFamily: "JosefinSans"),),
+                      Text("*",style: TextStyle(fontFamily: "JosefinSans", color: Colors.red),),
+                    ],
+                  ),
+                  const SizedBox(height: AppSizes.dimen10,),
+                  Container(
+                    height: 45,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius:  BorderRadius.circular(5),
+                    ),
+                    child: TextFormField(
+                      obscureText: false,
+                      decoration: const InputDecoration(
+                        hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
+                        hintText: "",
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.all(20),
+                      ),
+                    ),
+                  ),
+
+                ],
+              )),
+              SizedBox(
+                width: MediaQuery.of(context).size.width,
+                child: ElevatedButton(
+                    onPressed: () {
+                      jumpTo(1);
+                      setState(() {
+                        step2Color = Colors.green;
+                      });
+                    },
+                    style: ElevatedButton.styleFrom(
+                        primary: AppColors.green,
+                        // padding: const EdgeInsets.symmetric(horizontal: 155, vertical: 10),
+                        textStyle: const TextStyle(
+                            fontSize: AppSizes.dimen15,
+                            fontWeight: FontWeight.normal)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const[
+                        Text("Continue to Next Step",style: TextStyle(fontFamily: "JosefinSans"),),
+                        Icon((Icons.arrow_forward)),
+                      ],
+                    )),
+              ),
+              Row(
+                children: [
+                  const Text("Already have an account"),
+                  TextButton(onPressed: (){}, child: const Text("Login", style: TextStyle(
+                      decoration: TextDecoration.underline
+                  ),))
+                ],
+              )
+            ],
+          ),
+        )
     );
   }
   Widget step2(){
@@ -575,9 +573,7 @@ class _SignupScreenState extends State<SignupScreen> {
               Row(
                 children: [
                   const Text("Already have an account"),
-                  TextButton(onPressed: (){
-                    Navigator.pushNamed(context, "/login");
-                  }, child: const Text("Login", style: TextStyle(
+                  TextButton(onPressed: (){}, child: const Text("Login", style: TextStyle(
                       decoration: TextDecoration.underline
                   ),))
                 ],
@@ -644,7 +640,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       obscureText: false,
                       readOnly: true,
                       decoration: const InputDecoration(
-                          suffixIcon : Icon(Icons.arrow_drop_down),
+                        suffixIcon : Icon(Icons.arrow_drop_down),
                         hintStyle: TextStyle(fontSize: 15, color: Colors.grey),
                         hintText: "Please select",
                         border: InputBorder.none,
@@ -764,19 +760,19 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: AppSizes.dimen10,),
                   Container(
-                    height: 45,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius:  BorderRadius.circular(5),
-                    ),
-                    child: IntlPhoneField(
-                      decoration: const InputDecoration(
-                        labelText: '',
+                      height: 45,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius:  BorderRadius.circular(5),
                       ),
-                      initialCountryCode: 'IN',
-                      onChanged: (phone) {
-                      },
-                    )
+                      child: IntlPhoneField(
+                        decoration: const InputDecoration(
+                          labelText: '',
+                        ),
+                        initialCountryCode: 'IN',
+                        onChanged: (phone) {
+                        },
+                      )
                   ),
                   const SizedBox(
                     height: AppSizes.dimen10,
@@ -854,9 +850,7 @@ class _SignupScreenState extends State<SignupScreen> {
               Row(
                 children: [
                   const Text("Already have an account"),
-                  TextButton(onPressed: (){
-                    Navigator.pushNamed(context, "/login");
-                  }, child: const Text("Login Screen", style: TextStyle(
+                  TextButton(onPressed: (){}, child: const Text("Login", style: TextStyle(
                       decoration: TextDecoration.underline
                   ),))
                 ],
@@ -902,8 +896,8 @@ class _SignupScreenState extends State<SignupScreen> {
                         style: TextStyle(fontFamily: "JosefinSans",fontSize: AppSizes.dimen17),),
                       const SizedBox(height: AppSizes.dimen20,),
                       const Padding(padding: EdgeInsets.only(left: 10, right: 10),
-                      child: Divider(thickness: 1,
-                        color: AppColors.black,),),
+                        child: Divider(thickness: 1,
+                          color: AppColors.black,),),
                       const SizedBox(height: 15,),
                       Container(
                         padding: const EdgeInsets.only(left: 20, right: 20),
@@ -997,12 +991,12 @@ class _SignupScreenState extends State<SignupScreen> {
                       Expanded(child: Container(
                         color: Colors.grey.withOpacity(0.3),
                         child: PageView.builder(
-                          controller: controller,
+                            controller: controller,
                             physics: const NeverScrollableScrollPhysics(),
                             itemCount: 3,
                             itemBuilder: (BuildContext context, index){
-                          return index==0?step1():index==1?step2():step3();
-                        }),
+                              return index==0?step1():index==1?step2():step3();
+                            }),
                       ))
 
                     ],
