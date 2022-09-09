@@ -9,7 +9,7 @@ class MyWatchesScreen extends StatefulWidget {
 class _MyWatchesScreenState extends State<MyWatchesScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Text("My Watches Screen"),
       ),

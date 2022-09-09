@@ -11,6 +11,17 @@ class WelcomeScreen extends StatefulWidget {
 
 class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
+  void initState(){
+    super.initState();
+    changeToNext();
+  }
+  void changeToNext(){
+    Future.delayed(const Duration(seconds: 2),(){
+      Navigator.pushReplacementNamed(context, "/login");
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
