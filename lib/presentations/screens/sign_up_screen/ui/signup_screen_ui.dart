@@ -856,7 +856,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   const Text("Already have an account"),
                   TextButton(onPressed: (){
                     Navigator.pushNamed(context, "/login");
-                  }, child: const Text("Login", style: TextStyle(
+                  }, child: const Text("Login Screen", style: TextStyle(
                       decoration: TextDecoration.underline
                   ),))
                 ],
