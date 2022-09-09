@@ -18,7 +18,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
 
   int currentIndex = 0;
   final List pages = [
-    const DiscoverScreen(),
+   // const DiscoverScreen(),
     const ChatScreen(),
     const SellScreen(),
     const MyWatchesScreen(),
