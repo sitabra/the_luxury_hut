@@ -10,10 +10,13 @@ class AppColors {
   static const grey = Color.fromARGB(255,135,135,135);
   static const textFieldBg = Color(0xFFF3F3F3);
   static const transparent = Color(0xFFFFF);
+  static const drawerBackGrey = Color.fromARGB(255,39,38,38);
   static const shimmer = Color(0xFFF1F3F5);
   static const orange = Color(0xF7FC7732);
   static const amber = Color(0xF7E8A73E);
   static const green = Color.fromARGB(255,3,182,123);
+  static const tint = Color.fromARGB(255,251,222,189);
+  static const reservedText = Color.fromARGB(255,233,140,0);
   static const facebook = Color(0xFF3b5998);
   static const twitter = Color(0xFF00ACEE);
   static const instagram = Color(0xFF833AB4);

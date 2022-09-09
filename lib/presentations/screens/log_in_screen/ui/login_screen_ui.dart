@@ -126,7 +126,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           SizedBox(
                             width: MediaQuery.of(context).size.width,
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamedAndRemoveUntil(context, "/dashboard", (route) => false);
+                                },
                                 style: ElevatedButton.styleFrom(
                                     primary: AppColors.green,
                                     // padding: const EdgeInsets.symmetric(horizontal: 155, vertical: 10),
