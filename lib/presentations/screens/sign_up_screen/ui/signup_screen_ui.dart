@@ -651,7 +651,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   const SizedBox(
                     height: AppSizes.dimen10,
                   ),
-                  const Text("Title",style: TextStyle(fontFamily: "JosefinSans"),),
+                  const Text("Titles",style: TextStyle(fontFamily: "JosefinSans"),),
                   const SizedBox(height: AppSizes.dimen10,),
                   Container(
                     height: 45,
