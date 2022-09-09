@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
 
 import '../../../../constants/dimens.dart';
 import '../../../../constants/palatte.dart';
@@ -764,15 +765,14 @@ class _SignupScreenState extends State<SignupScreen> {
                       color: Colors.white,
                       borderRadius:  BorderRadius.circular(5),
                     ),
-                    child: TextFormField(
-                      obscureText: false,
+                    child: IntlPhoneField(
                       decoration: const InputDecoration(
-                        hintStyle: TextStyle(fontSize: 15, color: Colors.indigo),
-                        hintText: "",
-                        border: InputBorder.none,
-                        contentPadding: EdgeInsets.all(20),
+                        labelText: '',
                       ),
-                    ),
+                      initialCountryCode: 'IN',
+                      onChanged: (phone) {
+                      },
+                    )
                   ),
                   const SizedBox(
                     height: AppSizes.dimen10,
