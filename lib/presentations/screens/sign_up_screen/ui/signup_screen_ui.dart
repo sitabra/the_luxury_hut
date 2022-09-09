@@ -294,7 +294,9 @@ class _SignupScreenState extends State<SignupScreen> {
             Row(
               children: [
                 const Text("Already have an account"),
-                TextButton(onPressed: (){}, child: const Text("Login", style: TextStyle(
+                TextButton(onPressed: (){
+                  Navigator.pushNamed(context, "/login");
+                }, child: const Text("Login", style: TextStyle(
                   decoration: TextDecoration.underline
                 ),))
               ],
@@ -573,7 +575,9 @@ class _SignupScreenState extends State<SignupScreen> {
               Row(
                 children: [
                   const Text("Already have an account"),
-                  TextButton(onPressed: (){}, child: const Text("Login", style: TextStyle(
+                  TextButton(onPressed: (){
+                    Navigator.pushNamed(context, "/login");
+                  }, child: const Text("Login", style: TextStyle(
                       decoration: TextDecoration.underline
                   ),))
                 ],
@@ -850,7 +854,9 @@ class _SignupScreenState extends State<SignupScreen> {
               Row(
                 children: [
                   const Text("Already have an account"),
-                  TextButton(onPressed: (){}, child: const Text("Login", style: TextStyle(
+                  TextButton(onPressed: (){
+                    Navigator.pushNamed(context, "/login");
+                  }, child: const Text("Login Screen", style: TextStyle(
                       decoration: TextDecoration.underline
                   ),))
                 ],

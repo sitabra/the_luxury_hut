@@ -9,7 +9,7 @@ class SellScreen extends StatefulWidget {
 class _SellScreenState extends State<SellScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Text("Sell Screen"),
       ),

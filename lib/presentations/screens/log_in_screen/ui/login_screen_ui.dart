@@ -138,7 +138,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           SizedBox(
                             width: MediaQuery.of(context).size.width,
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, "/signup");
+                                },
                                 style: ElevatedButton.styleFrom(
                                     primary: AppColors.black,
                                     // padding: const EdgeInsets.symmetric(horizontal: 155, vertical: 10),
